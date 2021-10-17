@@ -1,0 +1,34 @@
+<NiloosoftCvAnalysisInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ApplyingPerson>
+    <AccountManagerId xsi:nil="true"/>
+    <BirthDate xsi:nil="true"/>
+    <CardId>00000000-0000-0000-0000-000000000000</CardId>
+    <CreatedBy>0</CreatedBy>
+    <CreationDate xsi:nil="true"/>
+    <Email>##EMAIL##</Email>
+    <EntityLocalName>##NAME##</EntityLocalName>
+    <FederalId>##FEDERALID##</FederalId>
+    <HighestStage xsi:nil="true"/>
+    <IsParseAllAsTransient xsi:nil="true"/>
+    <LockLevelStatus>0</LockLevelStatus>
+    <ParentCardId xsi:nil="true"/>
+    <Phones/>
+    <Rank xsi:nil="true"/>
+    <RecruitedBy xsi:nil="true"/>
+    <SellsStatus xsi:nil="true"/>
+    <Status xsi:nil="true"/>
+    <StatusExpirationTime xsi:nil="true"/>
+    <UpdateDate>0001-01-01T00:00:00</UpdateDate>
+    <UpdatedBy>0</UpdatedBy>
+    <Gender>mail</Gender>
+    <NumberOfChildren xsi:nil="true"/>
+    <Role xsi:nil="true"/>
+    <SupplierApplicantId xsi:nil="true"/>
+    <SupplierExpirationTime xsi:nil="true"/>
+    <SupplierId>##SUPPLIERID##</SupplierId>
+    <UserId xsi:nil="true"/>
+  </ApplyingPerson>
+  <Notes>##NOTES##</Notes>
+  <SupplierId>##SUPPLIERID##</SupplierId>
+</NiloosoftCvAnalysisInfo>
+

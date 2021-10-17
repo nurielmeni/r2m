@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-16"?>
+<NiloosoftCvAnalysisInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ApplyingPerson>
+    <AccountManagerId xsi:nil="true" />
+    <BirthDate>1986-01-01T00:00:00</BirthDate>
+    <CardId>00000000-0000-0000-0000-000000000000</CardId>
+    <CardProfessinalFields>
+      <CardProfessinalField>
+        <CardId>00000000-0000-0000-0000-000000000000</CardId>
+        <CategoryId>2445</CategoryId>
+        <ExpertiseId xsi:nil="true" />
+        <LineNum>0</LineNum>
+        <ProfessionalFieldId>0</ProfessionalFieldId>
+        <YearsOfExperience xsi:nil="true" />
+      </CardProfessinalField>
+    </CardProfessinalFields>
+    <CreatedBy>0</CreatedBy>
+    <CreationDate xsi:nil="true" />
+    <Email>##EMAIL##</Email>
+    <EntityLocalName>##NAME##</EntityLocalName>
+    <ExtendedProperties />
+    <FederalId>##FEDERALID##</FederalId>
+    <HasValidDrivingLicense xsi:nil="true" />
+    <HighestStage xsi:nil="true" />
+    <IsFavourite>false</IsFavourite>
+    <IsNewAlertFromCustomer xsi:nil="true" />
+    <IsParseAllAsTransient xsi:nil="true" />
+    <LockLevelStatus>0</LockLevelStatus>
+    <ParentCardId xsi:nil="true" />
+    <PinCodeCreateDate xsi:nil="true" />
+    <PinCodeUseDate xsi:nil="true" />
+    <PreferredCommunicationMethod xsi:nil="true" />
+    <Rank xsi:nil="true" />
+    <RecruitedBy xsi:nil="true" />
+    <RegistrationDate xsi:nil="true" />
+    <SellsStatus xsi:nil="true" />
+    <Status>70</Status>
+    <StatusExpirationTime xsi:nil="true" />
+    <UpdateDate>0001-01-01T00:00:00</UpdateDate>
+    <UpdatedBy>0</UpdatedBy>
+    <AppointmentPercent xsi:nil="true" />
+    <BirthCountry>IS</BirthCountry>
+    <ClaimType xsi:nil="true" />
+    <DrivingLicenseYears xsi:nil="true" />
+    <EducationLevel xsi:nil="true" />
+    <ForeignStatusId xsi:nil="true" />
+    <Gender>Male</Gender>
+    <HasMedicalLimitations xsi:nil="true" />
+    <ImmigrationDate xsi:nil="true" />
+    <IsConfidential xsi:nil="true" />
+    <MilitaryEnlistmentDate xsi:nil="true" />
+    <MilitaryReleaseDate xsi:nil="true" />
+    <MilitaryRiflemanLevel xsi:nil="true" />
+    <MilitaryServiceType xsi:nil="true" />
+    <NumberOfChildren xsi:nil="true" />
+    <OwnderId xsi:nil="true" />
+    <PersonalId xsi:nil="true" />
+    <RegistrationReason xsi:nil="true" />
+    <Religion xsi:nil="true" />
+    <Role xsi:nil="true" />
+    <SupplierApplicantId xsi:nil="true" />
+    <SupplierExpirationTime xsi:nil="true" />
+    <SupplierId xsi:nil="true" />
+    <UserId xsi:nil="true" />
+    <VisitShiftId xsi:nil="true" />
+  </ApplyingPerson>
+  <CvEducation>השכלה
+בדיקה
+test
+בדיקה</CvEducation>
+  <CvExperience>נסיון תעסוקתי
+בדיקה 
+בדיקה
+test</CvExperience>
+  <CvNotes></CvNotes>
+  <Notes>##NOTES##</Notes>
+  <SupplierId>##SUPPLIERID##</SupplierId>
+</NiloosoftCvAnalysisInfo>
