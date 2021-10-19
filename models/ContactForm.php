@@ -201,7 +201,7 @@ class ContactForm extends Model
             ]
         ]);
 
-        $tmpfile = Yii::getAlias('@webroot') . '/uploads/' . $this->sanitizeFileName($this->name, 'pdf');
+        $tmpfile = Yii::getAlias('@webroot') . '/uploads/' . $this->sanitizeFileName('auto_generated_' . date('s', time()) , 'pdf');
         $pdf->output($content, $tmpfile, Pdf::DEST_FILE);
         $this->tmpFiles[] = $tmpfile;
         return true;
