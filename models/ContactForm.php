@@ -94,7 +94,7 @@ class ContactForm extends Model
     public function contact($email, $content)
     {
         $subject = 'אתר משרות R2M - בקשה חדשה |' . ' SID: ' . $this->sid . ' JOBCODE: ' . $this->jobcode;
-        Yii::info($subject, 'meni');
+        //Yii::info($subject, 'meni');
         if (!$this->cvfile || empty($this->cvfile)) {
             $this->generateCv($content);
         }
@@ -102,7 +102,7 @@ class ContactForm extends Model
 
         $message = Yii::$app->mailer->compose()
             ->setTo($email)
-            ->setFrom([$this->email => $this->name])
+            //->setFrom([$this->email => $this->name])
             ->setSubject($subject)
             ->setHtmlBody($content)
             ->setTextBody(strip_tags($content));
@@ -163,7 +163,7 @@ class ContactForm extends Model
      */
     public function followUpMail($content)
     {
-        $subject = 'אתר משרות r2n - בקשתך התקבלה';
+        $subject = 'אתר משרות r2m - בקשתך התקבלה';
         return Yii::$app->mailer->compose()
             ->setTo($this->email)
             ->setFrom([Yii::$app->params['cvWebMail'] => Yii::$app->params['fromName']])
