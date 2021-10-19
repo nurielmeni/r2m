@@ -21,7 +21,9 @@
         "airani/yii2-bootstrap-rtl": "*",
         "kartik-v/yii2-mpdf": "dev-master",
         "paragonie/random_compat": ">=1 <9.99",
-        "2amigos/yii2-multi-select-widget" : "*"
+        "2amigos/yii2-multi-select-widget" : "*",
+        "nurielmeni/yii2-sumo-select": "*",
+        "nurielmeni/yii2-multiselect": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0"

@@ -13,6 +13,7 @@ use yii\helpers\Url;
  */
 class ContactForm extends Model
 {
+    public $jobTitle;
     public $name;
     public $id;
     public $email;
@@ -34,7 +35,7 @@ class ContactForm extends Model
         return [
             // name, email, subject and body are required
             [['name', 'phone', 'email'], 'required'],
-            [['name', 'email', 'phone', 'id'], 'filter', 'filter' => 'trim', 'skipOnArray' => true],
+            [['jobTitle', 'name', 'email', 'phone', 'id'], 'filter', 'filter' => 'trim', 'skipOnArray' => true],
             // email has to be a valid email address
             ['email', 'email'],
             ['phone', 'match', 'pattern' => '/^0[0-9]{1,2}[-\s]{0,1}[0-9]{3}[-\s]{0,1}[0-9]{4}/i'],
@@ -50,6 +51,7 @@ class ContactForm extends Model
     public function attributeLabels()
     {
         return [
+            'jobTitle' => 'בחירת תפקיד',
             'name' => 'שם מלא',
             'id' => 'ת"ז (לא חובה)',
             'email' => 'מייל',
@@ -59,6 +61,37 @@ class ContactForm extends Model
             'education' => 'השכלה',
             'sid' => 'מזהה ספק',
             'jobcode' => 'קוד משרה',
+        ];
+    }
+
+    public function jobTitles() {
+        return [
+            // 'מטבח' <= 'מטבח',
+            // 'בר' <= 'בר',
+            // 'בריסטה' <= 'בריסטה',
+            // 'מלצרות' <= 'מלצרות',
+            // 'אירוח' <= 'אירוח',
+            // 'מכירות בדליקטסן/בייקרי' <= 'מכירות בדליקטסן/בייקרי',
+            // 'מכירות HOME ופרחים' <= 'מכירות HOME ופרחים',
+            // 'שירות טלפוני' <= 'שירות טלפוני',
+            // 'מאפיה וקונדיטוריה' <= 'מאפיה וקונדיטוריה',
+            // 'מלונאות' <= 'מלונאות',
+            // 'אריזות משלוחים' <= 'אריזות משלוחים',
+            // 'עובדים כללים' <= 'עובדים כללים',
+            // 'אחר' <= 'אחר',
+            'בר',
+            'מטבח',
+            'בריסטה',
+            'מלצרות',
+            'אירוח',
+            'בדליקטסן/בייקרי',
+            'מכירות HOME ופרחים',
+            'שירות טלפוני',
+            'מאפיה וקונדיטוריה',
+            'מלונאות',
+            'אריזות משלוחים',
+            'עובדים כללים',
+            'אחר',
         ];
     }
 

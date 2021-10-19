@@ -24,6 +24,7 @@ body {
     top: -10px;
     background-color: white;
     padding: 0 5px;
+    z-index: 20;
 }
 
 div.logo img {
@@ -45,6 +46,24 @@ button.btn.btn-primary {
 form {
     margin-bottom: 30px;
 }
+
+.field-contactform-jobtitle .m-multiselect-wrapper {
+    margin-top: 0px;
+    border: 1px solid;
+}
+
+.field-contactform-jobtitle p.m-multiselect-button {
+    margin-bottom: 0px;
+}
+
+.field-contactform-jobtitle .m-multiselect-wrapper .floating {
+    box-shadow: #c1c1c1 0px 0px 10px;
+    border: 1px solid #000000;
+    margin-right: -1px;
+    margin-top: 4px;
+    padding: 0.75rem;
+}
+
 
 .footer {
     height: 60px;

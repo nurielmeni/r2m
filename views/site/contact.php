@@ -7,8 +7,8 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
-use yii\captcha\Captcha;
-use dosamigos\multiselect\MultiSelect;
+use nurielmeni\sumoSelect\SumoSelectWidget;
+use nurielmeni\multiselect\MultiSelectWidget;
 
 $this->title = 'R2M - הגשת מועמדות';
 ?>
@@ -52,8 +52,16 @@ $this->title = 'R2M - הגשת מועמדות';
             <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 elbit-title">
 
                 <?php $form = ActiveForm::begin(['id' => 'contact-form', 'options' => ['enctype' => 'multipart/form-data']]); ?>
+
                 <div class="row">
-                    <div class="col-xs-12 inset-label">
+                    <div class="col-xs-12 col-sm-6 inset-label">
+                        <?= $form->field($model, 'jobTitle')->widget(MultiSelectWidget::class,[
+                        'options' => $model->jobTitles(),
+                        'floating' => true,
+                        'label' => "",
+                        ]) ?>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 inset-label">
                         <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
                     </div>
                 </div>
