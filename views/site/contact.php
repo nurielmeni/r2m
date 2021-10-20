@@ -59,6 +59,7 @@ $this->title = 'R2M - הגשת מועמדות';
                         'options' => $model->jobTitles(),
                         'floating' => true,
                         'label' => "",
+                        'maxSelectOptions' => 3,
                         ]) ?>
                     </div>
                     <div class="col-xs-12 col-sm-6 inset-label">
