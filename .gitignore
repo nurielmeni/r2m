@@ -37,3 +37,4 @@ tests/_support/_generated
 /runtime/**
 /web/assets/**
 /web/index.php
+/web/uploads/

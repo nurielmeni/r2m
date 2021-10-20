@@ -68,14 +68,14 @@ class SiteController extends Controller
         
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            Yii::info('Sid: ' . $model->sid, 'meni');
-            Yii::info('Jobcode: ' . $model->jobcode, 'meni');
+            //Yii::info('Sid: ' . $model->sid, 'meni');
+            //Yii::info('Jobcode: ' . $model->jobcode, 'meni');
             
             $model->sid = $request->get('sid', Yii::$app->params['defaultSid']);
             $model->jobcode = $request->get('jobcode', Yii::$app->params['defaultJobcode']);
             
-            Yii::info('Sid(a): ' . $model->sid, 'meni');
-            Yii::info('Jobcode(a): ' . $model->jobcode, 'meni');
+            //Yii::info('Sid(a): ' . $model->sid, 'meni');
+            //Yii::info('Jobcode(a): ' . $model->jobcode, 'meni');
             
             $model->cvfile = UploadedFile::getInstance($model, 'cvfile');
             if ($model->cvfile) $model->upload();
