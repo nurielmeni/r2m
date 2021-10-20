@@ -55,18 +55,11 @@ $this->title = 'R2M - הגשת מועמדות';
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 inset-label">
-<<<<<<< HEAD
                         <?= $form->field($model, 'jobTitle')->widget(MultiSelectWidget::class,[
-                        'options' => $model->jobTitles(),
-                        'floating' => true,
-                        'label' => "",
-                        'maxSelectOptions' => 3,
-=======
-                        <?= $form->field($model, 'jobTitle')->widget(MultiSelectWidget::class, [
                             'options' => $model->jobTitles(),
                             'floating' => true,
                             'label' => "",
->>>>>>> 1e7d736c8884d9fe4b52eff49f5a9c3575ae283c
+                            'maxSelectOptions' => 3,
                         ]) ?>
                     </div>
                     <div class="col-xs-12 col-sm-6 inset-label">
